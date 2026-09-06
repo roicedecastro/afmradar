@@ -7,9 +7,11 @@ Phase 1 — Foundation
 - Next.js App Router foundation and design system
 - Phase 1 route model and typed seed-data contract
 - Core schema specification for publications, authorships, surveillance, research activity, and corrections
+- Responsive public homepage, AFM Now, Research Radar, publication record, methodology, mechanism, and research-map views
+- Validation contract tests, linting, type checking, and production build verification
 
 ## In progress
-- Public-facing homepage, AFM Now, Research Radar, publication, and methodology experiences
+- Phase 1 is complete; preparing the persistence and ingestion work for Phase 2
 
 ## Next
 - Add Supabase/Drizzle migration and repository implementation
