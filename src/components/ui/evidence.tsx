@@ -1,0 +1,4 @@
+import type { EvidenceStatus } from "@/lib/data";
+const colors: Record<EvidenceStatus,string> = { Established:"bg-[#d7e7de] text-[#174835]", Supported:"bg-[#e4eee7] text-[#31594a]", Emerging:"bg-[#e6e7c9] text-[#56531b]", "Mixed evidence":"bg-[#f1e0ce] text-[#825531]", Unresolved:"bg-[#e7e6e1] text-[#545853]" };
+export function EvidenceBadge({status}:{status:EvidenceStatus}) { return <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-bold tracking-wide ${colors[status]}`}>{status}</span>; }
+export function DemoNotice() { return <div role="status" className="border-y border-[#c59e65] bg-[#f5eddd] py-3 text-sm text-[#65491f]"><div className="container"><strong>Development data.</strong> Live CDC ingestion is not configured; empty values and historical context must not be interpreted as current surveillance.</div></div>; }
